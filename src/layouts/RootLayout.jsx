@@ -5,7 +5,7 @@ import './roorlayout.css'
 
 const RootLayout = () => {
     return (
-        <div className='mWidth mx-auto'>
+        <div className='mWidth container mx-auto p-4 sm:p-6 lg:p-8 bg-base-100 '>
             <NavBar></NavBar>
             <Outlet></Outlet>
             <Footer></Footer>
