@@ -14,6 +14,18 @@ const Banner = () => {
             infiniteLoop={true}
             showThumbs={false}
             interval={2000}
+            showStatus={false}
+            renderIndicator={(onClickHandler, isSelected, index, label) => (
+                <button
+                    key={index}
+                    onClick={onClickHandler}
+                    aria-label={`${label} ${index + 1}`}
+                    className={`mx-1 h-3 w-3 rounded-full transition-all duration-300 ${isSelected
+                            ? "bg-primary scale-125"
+                            : "bg-gray-300 hover:bg-gray-400"
+                        }`}
+                />
+            )}
             className="bg-neutral shadow-sm rounded-xl mb-8 p-4 sm:p-6 lg:py-16 lg:px-24">
             {/* banner starts here 1 */}
             <div className="flex flex-col-reverse lg:flex-row justify-between">
