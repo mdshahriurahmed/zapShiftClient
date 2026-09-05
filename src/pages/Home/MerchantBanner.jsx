@@ -19,7 +19,7 @@ const MerchantBanner = () => {
                             is Our First Priority
                         </h2>
 
-                        <p className="mt-3 max-w-[560px] text-xs leading-5 text-white/75 sm:text-sm sm:leading-6">
+                        <p className="mt-3 max-w-[560px] leading-5 text-white/75     sm:leading-6">
                             We offer the lowest delivery charge with the highest value along
                             with 100% safety of your product. Pathao courier delivers your
                             parcels in every corner of Bangladesh right on time.

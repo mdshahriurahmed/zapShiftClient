@@ -1,46 +1,120 @@
-import Logo from '../../../components/Logo/Logo';
+import { Link } from "react-router";
+import Logo from "../../../components/Logo/Logo"
+import linkedin from "../../../assets/social/linkedin.png"
+import facebook from "../../../assets/social/facebook.png"
+import twitter from "../../../assets/social/twitter.png"
+import youtube from "../../../assets/social/youtube.png"
 
 const Footer = () => {
     return (
-        <footer className="footer footer-horizontal footer-center   p-10">
-            <aside>
-                {<Logo></Logo>}
-                <p className="font-bold">
-                    ACME Industries Ltd.
-                    <br />
-                    Providing reliable tech since 1992
-                </p>
-                <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
-            </aside>
-            <nav>
-                <div className="grid grid-flow-col gap-4">
-                    <a>
-                        {<Logo></Logo>}
-                    </a>
-                    <a>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            className="fill-current">
-                            <path
-                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-                        </svg>
-                    </a>
-                    <a>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            className="fill-current">
-                            <path
-                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-                        </svg>
-                    </a>
+        <footer className="bg-base-100 p-4 sm:p-6">
+            <div className="mx-auto  rounded-[20px] bg-base-300 px-6 py-10 sm:px-10 sm:py-12">
+
+                {/* Logo */}
+                <div className="flex justify-center">
+                    <Link
+                        to="/"
+                        className="text-2xl font-bold tracking-tight text-neutral"
+                    >
+                        <Logo></Logo>
+                    </Link>
                 </div>
-            </nav>
+
+                {/* Description */}
+                <p className="mx-auto mt-3 max-w-xl text-center  leading-5 text-neutral/60 ">
+                    Enjoy fast, reliable parcel delivery with real-time tracking and
+                    zero hassle. From personal packages to business shipments — we
+                    deliver on time, every time.
+                </p>
+
+                {/* Divider */}
+                <div className="mx-auto mt-5 max-w-5xl border-t border-dashed border-secondary/40" />
+
+                {/* Navigation */}
+                <nav className="mt-5 flex flex-wrap justify-center gap-x-6 gap-y-3">
+                    <Link
+                        to="/services"
+                        className=" text-neutral/80 transition hover:text-primary"
+                    >
+                        Services
+                    </Link>
+
+                    <Link
+                        to="/coverage"
+                        className=" text-neutral/80 transition hover:text-primary"
+                    >
+                        Coverage
+                    </Link>
+
+                    <Link
+                        to="/about"
+                        className=" text-neutral/80 transition hover:text-primary"
+                    >
+                        About Us
+                    </Link>
+
+                    <Link
+                        to="/pricing"
+                        className=" text-neutral/80 transition hover:text-primary"
+                    >
+                        Pricing
+                    </Link>
+
+                    <Link
+                        to="/blog"
+                        className=" text-neutral/80 transition hover:text-primary"
+                    >
+                        Blog
+                    </Link>
+
+                    <Link
+                        to="/contact"
+                        className=" text-neutral/80 transition hover:text-primary"
+                    >
+                        Contact
+                    </Link>
+                </nav>
+
+                {/* Divider */}
+                <div className="mx-auto mt-5 max-w-5xl border-t border-dashed border-secondary/40" />
+
+                {/* Social Media */}
+                <div className="mt-5 flex justify-center gap-3">
+
+                    <Link to="#" aria-label="LinkedIn">
+                        <img
+                            src={linkedin}
+                            alt="LinkedIn"
+                            className="h-5 w-5 object-contain"
+                        />
+                    </Link>
+
+                    <Link to="#" aria-label="X">
+                        <img
+                            src={twitter}
+                            alt="X"
+                            className="h-5 w-5 object-contain"
+                        />
+                    </Link>
+
+                    <Link to="#" aria-label="Facebook">
+                        <img
+                            src={facebook}
+                            alt="Facebook"
+                            className="h-5 w-5 object-contain"
+                        />
+                    </Link>
+
+                    <Link to="#" aria-label="YouTube">
+                        <img
+                            src={youtube}
+                            alt="YouTube"
+                            className="h-5 w-5 object-contain"
+                        />
+                    </Link>
+
+                </div>
+            </div>
         </footer>
     );
 };

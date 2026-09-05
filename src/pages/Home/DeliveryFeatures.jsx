@@ -29,7 +29,7 @@ const DeliveryFeatures = () => {
                                 Live Parcel Tracking
                             </h3>
 
-                            <p className="mt-2 text-sm leading-6 text-secondary/65">
+                            <p className="mt-2    leading-6 text-secondary/65">
                                 Stay updated in real-time with our live parcel tracking feature.
                                 From pick-up to delivery, monitor your shipment&apos;s journey
                                 and get instant status updates for complete peace of mind.
@@ -61,7 +61,7 @@ const DeliveryFeatures = () => {
                                 100% Safe Delivery
                             </h3>
 
-                            <p className="mt-2 text-sm leading-6 text-secondary/65">
+                            <p className="mt-2    leading-6 text-secondary/65">
                                 We ensure your parcels are handled with the utmost care and
                                 delivered securely to their destination. Our reliable process
                                 guarantees safe and damage-free delivery every time.
@@ -93,7 +93,7 @@ const DeliveryFeatures = () => {
                                 24/7 Call Center Support
                             </h3>
 
-                            <p className="mt-2 text-sm leading-6 text-secondary/65">
+                            <p className="mt-2    leading-6 text-secondary/65">
                                 Our dedicated support team is available around the clock to
                                 assist you with any questions, updates, or delivery
                                 concerns—anytime you need us.

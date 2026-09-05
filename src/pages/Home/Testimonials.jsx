@@ -27,7 +27,7 @@ const Testimonials = () => {
                     What our customers are sayings
                 </h2>
 
-                <p className="mx-auto mt-2 max-w-[550px] text-xs leading-5 text-secondary/60 sm:text-sm">
+                <p className="mx-auto mt-2 max-w-[550px]   leading-5 text-secondary/60     ">
                     Enhance posture, mobility, and well-being effortlessly with Posture Pro.
                     Achieve proper alignment, reduce pain, and strengthen your body with ease!
                 </p>
@@ -62,7 +62,7 @@ const Testimonials = () => {
 
                             <img src={reviewQuote} alt="" />
 
-                            <p className="text-xs leading-5 text-secondary/70 sm:text-sm">
+                            <p className="  leading-5 text-secondary/70     ">
                                 A posture corrector works by providing support and gentle
                                 alignment to your shoulders, back, and spine, encouraging you
                                 to maintain proper posture throughout the day.
@@ -94,7 +94,7 @@ const Testimonials = () => {
 
                             <img src={reviewQuote} alt="" />
 
-                            <p className="text-xs leading-5 text-secondary/70 sm:text-sm">
+                            <p className="  leading-5 text-secondary/70     ">
                                 This product has helped me improve my posture significantly.
                                 It is comfortable, lightweight, and very easy to use throughout
                                 the day.
@@ -126,7 +126,7 @@ const Testimonials = () => {
 
                             <img src={reviewQuote} alt="" />
 
-                            <p className="text-xs leading-5 text-secondary/70 sm:text-sm">
+                            <p className="  leading-5 text-secondary/70     ">
                                 I noticed a real difference after using it consistently.
                                 My back feels better and maintaining proper posture has become
                                 much easier.
@@ -158,7 +158,7 @@ const Testimonials = () => {
 
                             <img src={reviewQuote} alt="" />
 
-                            <p className="text-xs leading-5 text-secondary/70 sm:text-sm">
+                            <p className="  leading-5 text-secondary/70     ">
                                 Very useful for everyday work. The support is comfortable and
                                 helps me stay aware of my posture while working for long hours.
                             </p>
@@ -189,7 +189,7 @@ const Testimonials = () => {
 
                             <img src={reviewQuote} alt="" />
 
-                            <p className="text-xs leading-5 text-secondary/70 sm:text-sm">
+                            <p className="  leading-5 text-secondary/70     ">
                                 The product is simple to use and has made maintaining good
                                 posture much easier during my daily activities.
                             </p>
@@ -220,7 +220,7 @@ const Testimonials = () => {
 
                             <img src={reviewQuote} alt="" />
 
-                            <p className="text-xs leading-5 text-secondary/70 sm:text-sm">
+                            <p className="  leading-5 text-secondary/70     ">
                                 Comfortable, lightweight and effective. I would definitely
                                 recommend it to anyone looking to improve their posture.
                             </p>

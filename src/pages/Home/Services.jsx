@@ -31,7 +31,7 @@ const Services = () => {
                             Delivery
                         </h3>
 
-                        <p className="mt-3 text-[13px] leading-[19px] text-secondary/70">
+                        <p className="mt-3   leading-[19px] text-secondary/70">
                             We deliver parcels within 24–72 hours in Dhaka, Chittagong,
                             Sylhet, Khulna, and Rajshahi. Express delivery available in
                             Dhaka within 4–6 hours from pick-up to drop-off.
@@ -48,7 +48,7 @@ const Services = () => {
                             Nationwide Delivery
                         </h3>
 
-                        <p className="mt-3 text-[13px] leading-[19px] text-secondary/70">
+                        <p className="mt-3   leading-[19px] text-secondary/70">
                             We deliver parcels nationwide with home delivery in every
                             district, ensuring your products reach customers within
                             48–72 hours.
@@ -65,7 +65,7 @@ const Services = () => {
                             Fulfillment Solution
                         </h3>
 
-                        <p className="mt-3 text-[13px] leading-[19px] text-secondary/70">
+                        <p className="mt-3   leading-[19px] text-secondary/70">
                             We also offer customized service with inventory management
                             support, online order processing, packaging, and after sales
                             support.
@@ -82,7 +82,7 @@ const Services = () => {
                             Cash on Home Delivery
                         </h3>
 
-                        <p className="mt-3 text-[13px] leading-[19px] text-secondary/70">
+                        <p className="mt-3   leading-[19px] text-secondary/70">
                             100% cash on delivery anywhere in Bangladesh with guaranteed
                             safety of your product.
                         </p>
@@ -100,7 +100,7 @@ const Services = () => {
                             In Logistics
                         </h3>
 
-                        <p className="mt-3 text-[13px] leading-[19px] text-secondary/70">
+                        <p className="mt-3   leading-[19px] text-secondary/70">
                             Customized corporate services which includes warehouse and
                             inventory management support.
                         </p>
@@ -116,7 +116,7 @@ const Services = () => {
                             Parcel Return
                         </h3>
 
-                        <p className="mt-3 text-[13px] leading-[19px] text-secondary/70">
+                        <p className="mt-3   leading-[19px] text-secondary/70">
                             Through our reverse logistics facility we allow end customers
                             to return or exchange their products with online business
                             merchants.
