@@ -3,7 +3,9 @@ import DeliveryFeatures from '../DeliveryFeatures';
 import HowWorks from '../HowWorks/HowWorks';
 import MerchantBanner from '../MerchantBanner';
 import Services from '../Services';
+import Testimonials from '../Testimonials';
 import TrustedCompanies from '../TrustedCompanies';
+
 
 const Home = () => {
     return (
@@ -15,6 +17,7 @@ const Home = () => {
                 <TrustedCompanies></TrustedCompanies>
                 <DeliveryFeatures></DeliveryFeatures>
                 <MerchantBanner></MerchantBanner>
+                <Testimonials></Testimonials>
 
             </div>
         </div>
