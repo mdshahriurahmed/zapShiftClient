@@ -21,8 +21,8 @@ const Banner = () => {
                     onClick={onClickHandler}
                     aria-label={`${label} ${index + 1}`}
                     className={`mx-1 h-3 w-3 rounded-full transition-all duration-300 ${isSelected
-                            ? "bg-primary scale-125"
-                            : "bg-gray-300 hover:bg-gray-400"
+                        ? "bg-primary scale-125"
+                        : "bg-gray-300 hover:bg-gray-400"
                         }`}
                 />
             )}
