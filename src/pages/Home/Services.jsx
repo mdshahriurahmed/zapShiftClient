@@ -20,7 +20,7 @@ const Services = () => {
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 
                     {/* Card 1 */}
-                    <div className="min-h-[254px] rounded-2xl bg-neutral px-7 py-6 text-center">
+                    <div className="min-h-[254px] rounded-2xl bg-neutral hover:bg-primary px-7 py-6 text-center">
                         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-base-100">
                             <span className="text-3xl">📦</span>
                         </div>
@@ -39,7 +39,7 @@ const Services = () => {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="min-h-[254px] rounded-2xl bg-primary px-7 py-6 text-center">
+                    <div className="min-h-[254px] rounded-2xl bg-neutral hover:bg-primary px-7 py-6 text-center">
                         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-base-100">
                             <span className="text-3xl">📦</span>
                         </div>
@@ -56,7 +56,7 @@ const Services = () => {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="min-h-[254px] rounded-2xl bg-neutral px-7 py-6 text-center">
+                    <div className="min-h-[254px] rounded-2xl bg-neutral hover:bg-primary px-7 py-6 text-center">
                         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-base-100">
                             <span className="text-3xl">📦</span>
                         </div>
@@ -73,7 +73,7 @@ const Services = () => {
                     </div>
 
                     {/* Card 4 */}
-                    <div className="min-h-[254px] rounded-2xl bg-neutral px-7 py-6 text-center">
+                    <div className="min-h-[254px] rounded-2xl bg-neutral hover:bg-primary px-7 py-6 text-center">
                         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-base-100">
                             <span className="text-3xl">📦</span>
                         </div>
@@ -89,7 +89,7 @@ const Services = () => {
                     </div>
 
                     {/* Card 5 */}
-                    <div className="min-h-[254px] rounded-2xl bg-neutral px-7 py-6 text-center">
+                    <div className="min-h-[254px] rounded-2xl bg-neutral hover:bg-primary px-7 py-6 text-center">
                         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-base-100">
                             <span className="text-3xl">📦</span>
                         </div>
@@ -107,7 +107,7 @@ const Services = () => {
                     </div>
 
                     {/* Card 6 */}
-                    <div className="min-h-[254px] rounded-2xl bg-neutral px-7 py-6 text-center">
+                    <div className="min-h-[254px] rounded-2xl bg-neutral hover:bg-primary px-7 py-6 text-center">
                         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-base-100">
                             <span className="text-3xl">📦</span>
                         </div>
