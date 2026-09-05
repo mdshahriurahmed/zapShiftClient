@@ -1,6 +1,6 @@
 const Services = () => {
     return (
-        <section className="bg-secondary rounded-2xl px-5 py-12 md:px-10 md:py-16">
+        <section className="bg-secondary rounded-2xl mb-8 p-4 sm:p-6 lg:py-16 lg:px-24">
             <div className="mx-auto max-w-5xl ">
 
                 {/* Section Header */}
