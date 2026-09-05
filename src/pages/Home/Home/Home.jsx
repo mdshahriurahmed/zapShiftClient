@@ -1,6 +1,7 @@
 import Banner from '../Banner/Banner';
 import DeliveryFeatures from '../DeliveryFeatures';
 import HowWorks from '../HowWorks/HowWorks';
+import MerchantBanner from '../MerchantBanner';
 import Services from '../Services';
 import TrustedCompanies from '../TrustedCompanies';
 
@@ -13,6 +14,7 @@ const Home = () => {
                 <Services></Services>
                 <TrustedCompanies></TrustedCompanies>
                 <DeliveryFeatures></DeliveryFeatures>
+                <MerchantBanner></MerchantBanner>
 
             </div>
         </div>
