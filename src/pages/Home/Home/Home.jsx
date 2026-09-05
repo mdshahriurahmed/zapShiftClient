@@ -1,5 +1,6 @@
 import Banner from '../Banner/Banner';
 import DeliveryFeatures from '../DeliveryFeatures';
+import FAQ from '../FAQ';
 import HowWorks from '../HowWorks/HowWorks';
 import MerchantBanner from '../MerchantBanner';
 import Services from '../Services';
@@ -18,6 +19,7 @@ const Home = () => {
                 <DeliveryFeatures></DeliveryFeatures>
                 <MerchantBanner></MerchantBanner>
                 <Testimonials></Testimonials>
+                <FAQ></FAQ>
 
             </div>
         </div>

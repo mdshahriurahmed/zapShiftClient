@@ -10,7 +10,7 @@ import reviewQuote from "../../assets/reviewQuote.png";
 
 const Testimonials = () => {
     return (
-        <section className="w-full overflow-hidden bg-base-100 px-4 py-12 sm:px-6 md:px-8 lg:px-10">
+        <section className="w-full overflow-hidden mb-8 p-4 sm:p-6 lg:py-16 lg:px-24">
 
             {/* Top Illustration */}
             <div className="mb-4 flex justify-center">
