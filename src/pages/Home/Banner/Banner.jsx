@@ -15,6 +15,7 @@ const Banner = () => {
             showThumbs={false}
             interval={2000}
             showStatus={false}
+            swipeable={false}
             renderIndicator={(onClickHandler, isSelected, index, label) => (
                 <button
                     key={index}
