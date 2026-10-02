@@ -3,6 +3,26 @@ import RootLayout from "../layouts/RootLayout";
 import Home from "../pages/Home/Home/Home";
 import Coverage from "../pages/Coverage/Coverage";
 import ErrorPage from "../pages/ErrorPage";
+import AuthLayout from "../layouts/AuthLayout";
+import Login from "../pages/Auth/Login/Login";
+import Register from "../pages/Auth/Register/Register";
+import PrivateRoute from "./PrivateRoute";
+import Rider from "../pages/Rider/Rider";
+import SendParcel from "../pages/sendParcel/SendParcel";
+import DashboardLayout from "../layouts/DashboardLayout";
+import MyParcels from "../pages/Dashboard/MyParcels/MyParcels";
+import Payment from "../pages/Dashboard/Payment/Payment";
+import DashboardHome from "../pages/Dashboard/DashboardHome/DashboardHome";
+import PaymentHistory from "../pages/Dashboard/PaymentHistory/PaymentHistory";
+import PaymentSuccess from "../pages/Dashboard/Payment/PaymentSuccess";
+import PaymentCancelled from "../pages/Dashboard/Payment/PaymentCancelled";
+import RiderRoute from "./RiderRoute";
+import AssignedDeliveries from "../pages/Dashboard/AssignedDeliveries/AssignedDeliveries";
+import CompletedDeliveries from "../pages/Dashboard/CompletedDeliveries/CompletedDeliveries";
+import AdminRoute from "./AdminRoute";
+import ApproveRiders from "../pages/Dashboard/ApproveRiders/ApproveRiders";
+import AssignRiders from "../pages/Dashboard/AssignRiders/AssignRiders";
+import UsersManagement from "../pages/Dashboard/UsersManagement/UsersManagement";
 
 export const router = createBrowserRouter([
     {
@@ -14,6 +34,17 @@ export const router = createBrowserRouter([
                 Component: Home
             },
             {
+                path: 'rider',
+                element: <PrivateRoute><Rider></Rider></PrivateRoute>,
+                loader: () => fetch('../../public/serviceCenter.json').then(res => res.json())
+            },
+            {
+                path: 'send-parcel',
+                element: <PrivateRoute><SendParcel></SendParcel> </PrivateRoute>,
+                loader: () => fetch('../../public/serviceCenter.json').then(res => res.json())
+            },
+
+            {
                 path: "coverage",
                 Component: Coverage,
                 loader: () => fetch('/serviceCenter.json').then(res => res.json())
@@ -24,4 +55,71 @@ export const router = createBrowserRouter([
             },
         ]
     },
+    {
+        path: "/",
+        Component: AuthLayout,
+        children: [
+            {
+                path: "login",
+                Component: Login
+            },
+            {
+                path: "register",
+                Component: Register
+            },
+        ]
+    },
+    {
+        path: 'dashboard',
+        element: <PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
+        children: [
+            {
+                index: true,
+                Component: DashboardHome
+            },
+            {
+                path: 'my-parcels',
+                Component: MyParcels
+            },
+            {
+                path: 'payment/:parcelId',
+                Component: Payment
+            },
+            {
+                path: 'payment-history',
+                Component: PaymentHistory
+            },
+            {
+                path: 'payment-success',
+                Component: PaymentSuccess
+            },
+            {
+                path: 'payment-cancelled',
+                Component: PaymentCancelled
+            },
+            // rider only routes
+            {
+                path: 'assigned-deliveries',
+                element: <RiderRoute><AssignedDeliveries></AssignedDeliveries></RiderRoute>
+            },
+            {
+                path: 'completed-deliveries',
+                element: <RiderRoute><CompletedDeliveries></CompletedDeliveries></RiderRoute>
+            },
+
+            // admin only routes
+            {
+                path: 'approve-riders',
+                element: <AdminRoute><ApproveRiders></ApproveRiders></AdminRoute>
+            },
+            {
+                path: 'assign-riders',
+                element: <AdminRoute><AssignRiders></AssignRiders></AdminRoute>
+            },
+            {
+                path: 'users-management',
+                element: <AdminRoute><UsersManagement></UsersManagement></AdminRoute>
+            }
+        ]
+    }
 ]);

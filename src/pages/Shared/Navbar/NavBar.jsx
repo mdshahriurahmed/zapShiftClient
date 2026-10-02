@@ -1,12 +1,31 @@
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import Logo from "../../../components/Logo/Logo";
+import useAuth from "../../../hooks/useAuth";
 
 
 const NavBar = () => {
+
+    const { user, logOut } = useAuth();
+
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch(error => {
+                console.log(error)
+            })
+    }
+
     const links = <>
         <li><NavLink to="">Services</NavLink></li>
         <li><NavLink to="/coverage">Coverage</NavLink></li>
+        {
+            user && <>
+                <li><NavLink to="/dashboard/my-parcels">My Parcels</NavLink></li>
+                <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+            </>
+        }
         <li><NavLink to="">About Us</NavLink></li>
+        <li><NavLink to="/send-parcel">Send Parcel</NavLink></li>
         <li><NavLink to="">Pricing</NavLink></li>
         <li><NavLink to="">Be a Rider</NavLink></li>
 
@@ -24,7 +43,7 @@ const NavBar = () => {
                         {links}
                     </ul>
                 </div>
-                <NavLink to="">{<Logo></Logo>}</NavLink>
+                <NavLink to="/">{<Logo></Logo>}</NavLink>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 text-lg">
@@ -32,7 +51,15 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end ">
-                <a className="btn">Button</a>
+                {
+                    user ?
+                        <a onClick={handleLogOut} className="btn bg-white border-primary shadow-none">Log Out</a>
+                        : <Link className='btn bg-white border-primary shadow-none' to="/login">Log in</Link>
+                }
+                <Link
+                    className='btn btn-primary text-black mx-4'
+                    to="/rider">Be a Rider</Link>
+
             </div>
         </div>
     );
