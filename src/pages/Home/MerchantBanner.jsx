@@ -3,7 +3,7 @@ import location_merchant from "../../assets/location-merchant.png"
 
 const MerchantBanner = () => {
     return (
-        <section className="w-full mb-8 p-4 sm:p-6 lg:py-16 lg:px-24">
+        <section className="w-full mb-8 p-4 sm:p-6 lg:py-16 ">
             <div
                 className="relative w-full overflow-hidden rounded-[20px] bg-secondary">
 

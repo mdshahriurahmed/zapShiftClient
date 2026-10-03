@@ -2,7 +2,7 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 
 const FAQ = () => {
     return (
-        <section className="w-full mb-8 p-4 sm:p-6 lg:py-16 lg:px-24">
+        <section className="w-full mb-8 p-4 sm:p-6 lg:py-16">
 
             {/* Heading */}
             <div className="mb-6 w-full text-center sm:mb-7">

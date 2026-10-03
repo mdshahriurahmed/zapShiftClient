@@ -3,9 +3,9 @@ import safe_delivery from "../../assets/safe-delivery.png"
 
 const DeliveryFeatures = () => {
     return (
-        <section className="w-full mb-8 p-4 sm:p-6 lg:py-16 lg:px-24">
+        <section className="w-full mb-2 p-4 sm:p-6 lg:py-16 ">
             {/* Top dotted line */}
-            <div className="mb-5 w-full border-t border-dashed border-secondary  sm:mb-6" />
+            <div className="mb-5 w-full border-t border-dashed border-secondary  sm:mb-6 lg:mb-36" />
 
             <div className="flex w-full flex-col gap-4 sm:gap-5 my-20">
                 {/* ================= FEATURE 01 ================= */}
@@ -105,7 +105,7 @@ const DeliveryFeatures = () => {
             </div>
 
             {/* Bottom dotted line */}
-            <div className="mt-5 w-full border-t border-dashed border-secondary/40 sm:mt-6" />
+            <div className="mt-5 w-full border-t border-dashed border-secondary/40 sm:mt-6 lg:mt-36" />
         </section>
     );
 };

@@ -48,7 +48,7 @@ const Register = () => {
 
                         updateUserProfile(userProfile)
                             .then(() => {
-                                navigate(location.state || '/');
+                                navigate(location.state || '/dashboard');
                             })
                             .catch(error => console.log(error));
                     })
@@ -176,15 +176,7 @@ const Register = () => {
                         )}
                     </div>
 
-                    {/* Forgot Password */}
-                    <div className="pt-1">
-                        <a
-                            href="#"
-                            className="text-sm text-gray-500 underline"
-                        >
-                            Forgot Password?
-                        </a>
-                    </div>
+
 
                     {/* Register Button */}
                     <button

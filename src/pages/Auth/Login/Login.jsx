@@ -16,7 +16,7 @@ const Login = () => {
         signInUser(data.email, data.password)
             .then(result => {
                 console.log(result.user)
-                const from = location?.state?.from || '/';
+                const from = location?.state?.from || '/dashboard';
                 console.log('NAVIGATING TO:', from);
                 navigate(from, { replace: true });
             })
