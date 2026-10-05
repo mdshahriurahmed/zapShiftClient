@@ -52,7 +52,9 @@ const DashboardLayout = () => {
                     </div>
                 </nav>
 
-                <Outlet />
+                <div className='p-5'>
+                    <Outlet />
+                </div>
             </div>
 
             <div className="drawer-side is-drawer-close:overflow-visible">

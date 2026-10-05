@@ -45,7 +45,7 @@ const ApproveRiders = () => {
         <div>
             <h2 className="text-5xl">Riders Pending Approval: {riders.length} </h2>
             <div className="overflow-x-auto">
-                <table className="table table-zebra">
+                <table className="table ">
                     {/* head */}
                     <thead>
                         <tr>
@@ -70,20 +70,33 @@ const ApproveRiders = () => {
                                 </td>
                                 <td>{rider.workStatus}</td>
                                 <td>
+                                    {/* View */}
                                     <button
-                                        className='btn'>
-                                        <FaEye></FaEye>
+                                        className="btn btn-ghost btn-sm btn-square m-2 text-slate-600 hover:bg-slate-100"
+                                    >
+                                        <FaEye />
                                     </button>
+
+                                    {/* Approve */}
                                     <button
-                                        onClick={() => handleApproval(rider)} className='btn'>
+                                        onClick={() => handleApproval(rider)}
+                                        className="btn btn-ghost btn-sm btn-square m-2 text-success hover:bg-success/10"
+                                    >
                                         <FaUserCheck />
                                     </button>
+
+                                    {/* Reject */}
                                     <button
                                         onClick={() => handleRejection(rider)}
-                                        className='btn'>
+                                        className="btn btn-ghost btn-sm btn-square m-2 text-warning hover:bg-warning/10"
+                                    >
                                         <IoPersonRemoveSharp />
                                     </button>
-                                    <button className='btn'>
+
+                                    {/* Delete */}
+                                    <button
+                                        className="btn btn-ghost btn-sm btn-square m-2 text-error hover:bg-error/10"
+                                    >
                                         <FaTrashCan />
                                     </button>
                                 </td>

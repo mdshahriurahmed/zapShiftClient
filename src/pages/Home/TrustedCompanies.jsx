@@ -7,7 +7,7 @@ import start_people from "../../assets/brands/start_people.png";
 
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, FreeMode } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 const brandLogos = [
     amazon,
@@ -33,15 +33,11 @@ const TrustedCompanies = () => {
                 </h2>
 
                 <Swiper
-                    modules={[Autoplay, FreeMode]}
+                    modules={[Autoplay]}
                     loop={true}
-                    slidesPerView={4}
-                    spaceBetween={30}
-                    freeMode={{
-                        enabled: true,
-                        momentum: false,
-                    }}
-                    speed={3000}
+                    slidesPerView={6}
+                    spaceBetween={0}
+                    speed={8000}
                     autoplay={{
                         delay: 0,
                         disableOnInteraction: false,
@@ -57,7 +53,7 @@ const TrustedCompanies = () => {
                             slidesPerView: 3,
                         },
                         1024: {
-                            slidesPerView: 4,
+                            slidesPerView: 6,
                         },
                     }}
                 >

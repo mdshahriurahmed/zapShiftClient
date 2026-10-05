@@ -1,11 +1,13 @@
 import { Link, NavLink } from "react-router";
 import Logo from "../../../components/Logo/Logo";
 import useAuth from "../../../hooks/useAuth";
+import useRole from "../../../hooks/useRole";
 
 
 const NavBar = () => {
 
     const { user, logOut } = useAuth();
+    const { role } = useRole();
 
     const handleLogOut = () => {
         logOut()
@@ -55,9 +57,12 @@ const NavBar = () => {
                         <a onClick={handleLogOut} className="btn bg-white border-primary shadow-none">Log Out</a>
                         : <Link className='btn bg-white border-primary shadow-none' to="/login">Log in</Link>
                 }
-                <Link
-                    className='btn btn-primary text-black mx-4'
-                    to="/rider">Be a Rider</Link>
+                {role === 'user' && (
+                    <Link
+                        className='btn btn-primary text-black mx-4'
+                        to="/rider">Be a Rider</Link>
+                )}
+
 
             </div>
         </div>

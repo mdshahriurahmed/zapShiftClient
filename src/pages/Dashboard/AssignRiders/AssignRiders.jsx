@@ -16,7 +16,7 @@ const AssignRiders = () => {
         }
     });
 
-    console.log(parcels);
+
 
 
     // todo: invalidate query after assigning a rider
